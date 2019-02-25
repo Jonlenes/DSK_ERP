@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/Imagens">
+        <file>CDH.png</file>
+    </qresource>
+    <qresource prefix="/icones">
+        <file>icones/config_icone.png</file>
+        <file>icones/folha_icone.png</file>
+        <file>icones/func_est_icone.png</file>
+        <file>icones/func_ger_icone.png</file>
+        <file>icones/func_prd_icone.png</file>
+        <file>icones/icon_quit.png</file>
+        <file>icones/list_func_icone.png</file>
+        <file>icones/clientes_icone.png</file>
+        <file>icones/diagrama_icone.png</file>
+        <file>icones/sobre_icone.png</file>
+        <file>icones/add_clientes_icone.png</file>
+    </qresource>
+</RCC>

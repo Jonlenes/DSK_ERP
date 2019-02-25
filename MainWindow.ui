@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>428</width>
+    <height>197</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Controle Empresarial</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="widgetFuncionario" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>352</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Salario Base</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditMat"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEditQtdeHsMensais"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditCPF">
+         <property name="inputMask">
+          <string notr="true" comment="___.___.___-__" extracomment="___.___.___-__"/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Matricula</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEditSalarioBase"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_1">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Qtde de horas mesnais:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Qtde de horas Trabalhadas:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEditQtdeHsTrab"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Qtde de funcionarios Gerenciados:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="lineEditQtdeFuncGere"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditNome">
+         <property name="inputMask">
+          <string comment="___.___.___-__" extracomment="___.___.___-__"/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Senha</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEditSenha">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QPushButton" name="pushButtonSalvarFunc">
+         <property name="text">
+          <string>Salvar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Tipo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QComboBox" name="comboBoxTipoESt">
+         <item>
+          <property name="text">
+           <string>Jovem Aprendiz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Universtário</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widgetMostraFuncCliente" native="true">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>380</y>
+      <width>931</width>
+      <height>293</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButtonRemoverFunc">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Remover</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QTableWidget" name="tableWidgetMostra">
+       <column>
+        <property name="text">
+         <string>Tipo de Func</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nome</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CPF</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Matricula</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Salario Base</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Qtde hs Mensais</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Qtde hs Trabalh</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Qtde func Gere</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widgetCadastroCliente" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>215</width>
+      <height>147</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditNomeCliente">
+         <property name="inputMask">
+          <string comment="___.___.___-__" extracomment="___.___.___-__"/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Telefone</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditCPFCliente">
+         <property name="inputMask">
+          <string notr="true" comment="___.___.___-__" extracomment="___.___.___-__"/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEditEndCliente"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Endereço</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditTelefoneCliente"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="pushButtonSalvarCliente">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Salvar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widgetMostraCliente" native="true">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>60</y>
+      <width>561</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButtonRemoverCliente">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Remover</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidgetMostraCliente">
+       <column>
+        <property name="text">
+         <string>Nome</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CPF</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Telefone</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Endereço</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widgetFolhaPagamento" native="true">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>90</y>
+      <width>561</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QTableWidget" name="tableWidgetFolaPagamento">
+       <column>
+        <property name="text">
+         <string>Matricula</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nome</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CPF</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Salario</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelFolhaPagamento">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widgetLogin" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>232</width>
+      <height>124</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Matricula</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Senha</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditLoginMat"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditLoginSenha">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButtonEntrar">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Entrar</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButtonCadastrar">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Cadastre-se como Gerente</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widgetMostraDiagrama" native="true">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>290</y>
+      <width>18</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QLabel" name="labelFotoDiagrama">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>428</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAdicionar">
+    <property name="title">
+     <string>Adicionar</string>
+    </property>
+    <widget class="QMenu" name="menuFuncionario">
+     <property name="title">
+      <string>Funcionario</string>
+     </property>
+     <addaction name="actionGerente"/>
+     <addaction name="actionPadrao"/>
+     <addaction name="actionEstagiario"/>
+    </widget>
+    <addaction name="menuFuncionario"/>
+    <addaction name="actionCliente"/>
+   </widget>
+   <widget class="QMenu" name="menuDesenvolvedor">
+    <property name="title">
+     <string>Desenvolvedor</string>
+    </property>
+    <addaction name="actionVer_Diagrama_de_Class"/>
+   </widget>
+   <widget class="QMenu" name="menuConfigura_es">
+    <property name="title">
+     <string>Configurações</string>
+    </property>
+    <addaction name="actionAlterar_Senha"/>
+   </widget>
+   <widget class="QMenu" name="menuVe">
+    <property name="title">
+     <string>Ver</string>
+    </property>
+    <addaction name="actionLista_de_Funcionarios"/>
+    <addaction name="actionLista_de_Clientes"/>
+   </widget>
+   <widget class="QMenu" name="menuFinanceiro">
+    <property name="title">
+     <string>Financeiro</string>
+    </property>
+    <addaction name="actionFolha_de_Pagamento"/>
+   </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionSobre"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <addaction name="menuAdicionar"/>
+   <addaction name="menuVe"/>
+   <addaction name="menuDesenvolvedor"/>
+   <addaction name="menuFinanceiro"/>
+   <addaction name="menuConfigura_es"/>
+   <addaction name="menuSobre"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPadrao"/>
+   <addaction name="actionEstagiario"/>
+   <addaction name="actionGerente"/>
+   <addaction name="actionCliente"/>
+   <addaction name="separator"/>
+   <addaction name="actionLista_de_Funcionarios"/>
+   <addaction name="actionLista_de_Clientes"/>
+   <addaction name="separator"/>
+   <addaction name="actionVer_Diagrama_de_Class"/>
+   <addaction name="separator"/>
+   <addaction name="actionFolha_de_Pagamento"/>
+   <addaction name="separator"/>
+   <addaction name="actionAlterar_Senha"/>
+   <addaction name="separator"/>
+   <addaction name="actionSobre"/>
+   <addaction name="actionSair"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <action name="actionPadrao">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/func_prd_icone.png</normaloff>:/icones/icones/func_prd_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Padrao</string>
+   </property>
+  </action>
+  <action name="actionEstagiario">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/func_est_icone.png</normaloff>:/icones/icones/func_est_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Estagiario</string>
+   </property>
+  </action>
+  <action name="actionVer_Diagrama_de_Class">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/diagrama_icone.png</normaloff>:/icones/icones/diagrama_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ver Diagrama de Class UML</string>
+   </property>
+  </action>
+  <action name="actionCliente">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/add_clientes_icone.png</normaloff>:/icones/icones/add_clientes_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cliente</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Funcionarios">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/list_func_icone.png</normaloff>:/icones/icones/list_func_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lista de Funcionarios</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Clientes">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/clientes_icone.png</normaloff>:/icones/icones/clientes_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lista de Clientes</string>
+   </property>
+  </action>
+  <action name="actionGerente">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/func_ger_icone.png</normaloff>:/icones/icones/func_ger_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gerente</string>
+   </property>
+  </action>
+  <action name="actionFolha_de_Pagamento">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/folha_icone.png</normaloff>:/icones/icones/folha_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Folha de Pagamento</string>
+   </property>
+  </action>
+  <action name="actionAlterar_Senha">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/config_icone.png</normaloff>:/icones/icones/config_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Alterar Senha</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/sobre_icone.png</normaloff>:/icones/icones/sobre_icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/icones/icones/icon_quit.png</normaloff>:/icones/icones/icon_quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEditNomeCliente</tabstop>
+  <tabstop>lineEditCPFCliente</tabstop>
+  <tabstop>lineEditTelefoneCliente</tabstop>
+  <tabstop>lineEditEndCliente</tabstop>
+  <tabstop>pushButtonSalvarCliente</tabstop>
+  <tabstop>lineEditNome</tabstop>
+  <tabstop>lineEditCPF</tabstop>
+  <tabstop>lineEditMat</tabstop>
+  <tabstop>lineEditSalarioBase</tabstop>
+  <tabstop>lineEditQtdeHsMensais</tabstop>
+  <tabstop>lineEditQtdeHsTrab</tabstop>
+  <tabstop>lineEditQtdeFuncGere</tabstop>
+  <tabstop>lineEditSenha</tabstop>
+  <tabstop>comboBoxTipoESt</tabstop>
+  <tabstop>pushButtonSalvarFunc</tabstop>
+  <tabstop>tableWidgetMostra</tabstop>
+  <tabstop>tableWidgetMostraCliente</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
